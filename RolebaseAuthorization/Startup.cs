@@ -79,66 +79,9 @@ namespace RolebaseAuthorization
                     template: "{controller=Home}/{action=Index}/{id?}");
             });
 
-            CreateRoles(serviceProvider).Wait();
+            
         }
 
-        private async Task CreateRoles(IServiceProvider serviceProvider)
-        {
-            //initializing custom roles 
-            var RoleManager = serviceProvider.GetRequiredService<RoleManager<IdentityRole>>();
-            var UserManager = serviceProvider.GetRequiredService<UserManager<IdentityUser>>();
-            string[] roleNames = { "Admin", "User", "HR" };
-            IdentityResult roleResult;
-
-            foreach (var roleName in roleNames)
-            {
-                var roleExist = await RoleManager.RoleExistsAsync(roleName);
-                if (!roleExist)
-                {
-                    //create the roles and seed them to the database: Question 1
-                    roleResult = await RoleManager.CreateAsync(new IdentityRole(roleName));
-                }
-            }
-
-            IdentityUser user = await UserManager.FindByEmailAsync("gaurangpalsana007@gmail.com");
-
-            if (user == null)
-            {
-                user = new IdentityUser()
-                {
-                    UserName = "gaurangpalsana007@gmail.com",
-                    Email = "gaurangpalsana007@gmail.com",
-                };
-                await UserManager.CreateAsync(user, "Gauranng@3597");
-            }
-            await UserManager.AddToRoleAsync(user, "Admin");
-
-
-            IdentityUser user1 = await UserManager.FindByEmailAsync("test@gmail.com");
-
-            if (user1 == null)
-            {
-                user1 = new IdentityUser()
-                {
-                    UserName = "test@gmail.com",
-                    Email = "test@gmail.com",
-                };
-                await UserManager.CreateAsync(user1, "Test@123");
-            }
-            await UserManager.AddToRoleAsync(user1, "User");
-
-            IdentityUser user2 = await UserManager.FindByEmailAsync("gaurang@gmail.com");
-
-            if (user2 == null)
-            {
-                user2 = new IdentityUser()
-                {
-                    UserName = "gaurang@gmail.com",
-                    Email = "gaurang@gmail.com",
-                };
-                await UserManager.CreateAsync(user2, "Gaurang@123");
-            }
-            await UserManager.AddToRoleAsync(user2, "HR");
-        }
+        
     }
 }

@@ -12535,11 +12535,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Task Assign\\Authorization\\RolebaseAuthorization\\RolebaseAuthorization.csproj",
+      "projectUniqueName": "C:\\Users\\gaurang\\Authorization\\RolebaseAuthorization\\RolebaseAuthorization.csproj",
       "projectName": "RolebaseAuthorization",
-      "projectPath": "C:\\Task Assign\\Authorization\\RolebaseAuthorization\\RolebaseAuthorization.csproj",
+      "projectPath": "C:\\Users\\gaurang\\Authorization\\RolebaseAuthorization\\RolebaseAuthorization.csproj",
       "packagesPath": "C:\\Users\\gaurang\\.nuget\\packages\\",
-      "outputPath": "C:\\Task Assign\\Authorization\\RolebaseAuthorization\\obj\\",
+      "outputPath": "C:\\Users\\gaurang\\Authorization\\RolebaseAuthorization\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

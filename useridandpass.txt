@@ -9,3 +9,6 @@ password :- Test@123
 -----------------------Hr----------------------
 userid :- gaurang@gmail.com
 password :- Gauranng@123
+
+
+Hr can view both user side and hr side. this is set in [authorize role]

@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore;
 using RolebaseAuthorization.Data;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-
+  
 namespace RolebaseAuthorization
 {
     public class Startup

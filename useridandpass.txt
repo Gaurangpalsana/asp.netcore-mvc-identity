@@ -1,0 +1,11 @@
+---------------------------Admin------------------------
+userid :- gaurangpalsana007@gmail.com
+password :- Gauranng@3597
+
+--------------------------User---------------------------
+userid :- test@gmail.com
+password :- Test@123
+
+-----------------------Hr----------------------
+userid :- gaurang@gmail.com
+password :- Gauranng@123
